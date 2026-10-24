@@ -1,0 +1,107 @@
+{
+    "buildBodyTr": {
+        "tagName": "tr",
+        "attributes": {
+            "class": "align-middle"
+        },
+        "children": []
+    },
+    "buildColGroup": {
+        "tagName": "col",
+        "attributes": {
+            "width": "${width}"
+        }
+    },
+    "buildHeader": {
+        "tagName": "th",
+        "textContent": "${columnName}",
+        "attributes": {
+            "class": "py-3 px-3 fw-semibold text-uppercase small"
+        }
+    },
+    "buildFooter": {
+        "tagName": "td",
+        "children": [
+            {
+                "tagName": "input",
+                "attributes": {
+                    "type": "text",
+                    "placeholder": "enter ${columnName}",
+                    "name": "${columnName}",
+                    "id": "${columnName}",
+                    "list": "${columnName}",
+                    "class": "form-control"
+                }
+            }
+        ]
+    },
+    "buildBodyCell": {
+        "tagName": "td",
+        "textContent": "${rowValue}",
+        "attributes": {
+            "class": "py-3 px-3 text-secondary"
+        }
+    },
+    "button": {
+        "tagName": "button",
+        "textContent": "${columnName}",
+        "attributes": {
+            "class": "btn btn-primary btn-sm"
+        }
+    },
+    "buttonCell": {
+        "tagName": "td",
+        "attributes": {
+            "class": "py-2 px-3 text-center"
+        },
+        "children": [
+            {
+                "tagName": "button",
+                "textContent": "${agg:count}",
+                "attributes": {
+                    "class": "btn btn-primary btn-sm"
+                }
+            }
+        ]
+    },
+    "optionsButtonCell": {
+        "tagName": "td",
+        "attributes": {
+            "class": "py-2 px-3 text-center"
+        },
+        "children": [
+            {
+                "tagName": "button",
+                "textContent": "${columnName}",
+                "attributes": {
+                    "class": "btn btn-primary btn-sm"
+                }
+            }
+        ]
+    },
+    "buildOption": {
+        "tagName": "option",
+        "textContent": "${rowValue}",
+        "attributes": {
+            "value": "${rowValue}"
+        }
+    },
+    "buildSelect": {
+        "tagName": "select",
+        "attributes": {
+            "id": "LedgerName"
+        },
+        "children": []
+    },
+    "buildDataList": {
+        "tagName": "datalist",
+        "attributes": {
+            "data-name": "${columnName}"
+        },
+        "children": []
+    },
+    "emptyCell": {
+        "tagName": "td",
+        "children": []
+    }
+}
